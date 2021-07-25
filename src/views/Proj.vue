@@ -6,8 +6,8 @@
         <div>
           <router-link to="/about">About Me</router-link>   |
           <router-link to="/experiences"> Experiences</router-link>   |
-          <router-link to="/projects">Projects</router-link>   |
-          <router-link to="/aspirations">Aspirations</router-link>
+          <router-link to="/projects">Projects</router-link>   
+          <!-- <router-link to="/aspirations">Fun Facts!</router-link> -->
         </div>
       </div>
       <div class = "proj container">
@@ -20,7 +20,6 @@
               <li> You can click pictures of the dishes from your device or upload a picture from your photo library. </li>
               <li> Made use of Google Maps API, Places API and Geolocation API to search restaurant locations and find nearby restaurant recommendations. </li>
               <li> Website was written in VueJS and deployed using Firebase. Database was deployed in Firestore and Google Auth was used for security. </li>
-              <li> Link to website: <a href = "https://zoomers-proj2.web.app/" target="_blank"> MMM </a> </li>
             </ul>
             <br>
             
@@ -28,6 +27,9 @@
           </div>
           <div class="img">
             <img class = "proj-img" src = "../assets/rankin.png"/>
+            <a href = "https://zoomers-proj2.web.app/" target = "_blank"><div class = "proj-overlay proj-overlay-blur">
+              <div class = "proj-link"> Visit Website &#128279; </div>
+            </div></a>
           </div>
         </div>
         <div class = "proj-back">
@@ -37,27 +39,17 @@
               <li> Modeled off of Todoist, it is a to-do list manager where you can keep track of your to-dos, both complete and incomplete </li>
               <li> You can assign and sort to-dos into different categories </li>
               <li> Website was written in VueJS and deployed using Firebase. Database was deployed using Firestore and Google Auth was used for security. </li>
-              <li> Link to website: <a href = "https://csci5117-homework2-f3041.web.app/" target="_blank">To-doist</a></li>
+              
             </ul>  
           </div>
           <div class="img">
             <img class = "proj-img" src = "../assets/todo.png"/>
+            <a href = "https://csci5117-homework2-f3041.web.app/" target = "_blank"><div class = "proj-overlay proj-overlay-blur">
+              <div class = "proj-link"> Visit Website &#128279; </div>
+            </div></a>
           </div>
         </div>
-        <div class = "proj-back">
-          <div class="txt">
-            <h2 class = "title"> Campus Connector Simulator </h2>
-            <ul>
-              <li> Software project simulating the movement of UMN Campus Connector buses along registered routes </li>
-              <li> Modified baseline simulator to change capacities of busses dependent on the time of the day </li>
-              <li> Bus markers dynamically changed color and opacity depending on number of passengers and which route it is on. </li>
-              <li> Project written in C++ and front-end written in ReactJS. </li>
-            </ul>  
-          </div>
-          <div class="img">
-            <img class = "proj-img" src = "../assets/simulation.png"/>
-          </div>
-        </div>
+        
         <div class = "proj-back">
           <div class="txt">
             <h2 class = "title"> Earthquake Data Analytics Project </h2>
@@ -65,11 +57,14 @@
               <li> Used historical data from an NOAA database to understand more about the impact of earthquakes through the years. </li>
               <li> Project was written in a Jupyter noteook, making use of the Pandas data analytics library in Python. </li>
               <li> Goal was to be exposed to the techniques of making use of programming to transform unstructured data into useful information. </li>
-              <li> Link to Github Repository: <a href = "https://github.com/nishantsatpathy/Earthquake-Data-Analysis" target = "_blank">Earthquake Data Analysis</a></li>
+              
             </ul>
           </div>
           <div class="img">
             <img class = "proj-img" src = "../assets/earthquake.png"/>
+            <a href = "https://github.com/nishantsatpathy/Earthquake-Data-Analysis" target = "_blank"><div class = "proj-overlay proj-overlay-blur">
+              <div class = "proj-link"> Visit Github Repo &#128279; </div>
+            </div> </a>
           </div>
         </div>
         <div class = "proj-back">
@@ -82,11 +77,30 @@
               <li> Calculator was implemented primarily using the LinkedList data structure </li>
               <li> Project was written in Java </li>
               <li> The first programming project I ever worked on. </li>
-              <li> Link to Github Repository: <a href = "https://github.com/nishantsatpathy/Polynomial-Calculator" target = "_blank">Polynomial Calculator</a></li>
+              
             </ul>
           </div>
           <div class="img">
             <img class = "proj-img" src = "../assets/calculator.png"/>
+            <a href = "https://github.com/nishantsatpathy/Polynomial-Calculator" target = "_blank"><div class = "proj-overlay proj-overlay-blur">
+              <div class = "proj-link"> Visit Github Repo &#128279; </div>
+            </div> </a>
+          </div>
+        </div>
+        <div class = "proj-back">
+          <div class="txt">
+            <h2 class = "title"> Campus Connector Simulator </h2>
+            <ul>
+              <li> Software project simulating the movement of UMN Campus Connector buses along registered routes </li>
+              <li> Modified baseline simulator to change capacities of busses dependent on the time of the day </li>
+              <li> Bus markers dynamically changed color and opacity depending on number of passengers and which route it is on. </li>
+              <li> Project written in C++ and front-end written in ReactJS. </li>
+              <li> Link unavailable due to University regulations. </li>
+            </ul>  
+          </div>
+          <div class="img">
+            <img class = "proj-img" src = "../assets/simulation.png"/>
+            
           </div>
         </div>
       </div>
@@ -104,13 +118,13 @@ h1 {
 }
 
 h2 {
-  color: rgb(105, 105, 105);
+  color: rgb(54, 53, 53);
   font-family:'Exo', sans-serif;
   font-size: x-large;
 }
 
 h3 {
-  color: rgb(105, 105, 105);
+  color: rgb(54, 53, 53);
   font-family:'Exo', sans-serif;
   font-size: large;
   font-weight: bold;
@@ -155,7 +169,7 @@ img.bg {
   background-color: rgba(255, 255, 255, 0.5);
   margin-bottom: 1.5%;
   width:100%;
-  
+  border-radius: 15px;
 }
 
 .proj {
@@ -165,12 +179,11 @@ img.bg {
 }
 
 .txt {
-  color: rgb(105, 105, 105);
+  color: rgb(54, 53, 53);
   font-family:'Exo', sans-serif;
   font-size: large;
   max-width: 60%;
   word-wrap: break-word;
-  
 }
 
 ul {
@@ -182,8 +195,49 @@ li {
 }
 
 .img {
+  position: relative;
   align-items: right;
   height: 35%;
   width: 35%;
+}
+
+.proj-img {
+  display: block;
+  width: 100%;
+}
+
+.proj-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  color: rgb(54, 53, 53);
+  display: flex;
+  font-family:'Exo', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size:x-large;
+  opacity: 0;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.proj-overlay-blur {
+  backdrop-filter: blur(5px);
+}
+
+.proj-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+.proj-overlay:hover {
+  opacity: 1;
+}
+
+.proj-overlay:hover > * {
+  transform: translateY(0)
 }
 </style>

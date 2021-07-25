@@ -22,7 +22,7 @@
         mounted(){
             window.setInterval(()=>{
                 this.characteristics();
-            }, 2000);
+            }, 1250);
         },
 
         methods: {
@@ -82,5 +82,10 @@ img.bg {
     color: white;
     font-weight:bold;
     font-family: 'Exo', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
 </style>

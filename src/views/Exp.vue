@@ -6,8 +6,8 @@
             <div>
                 <router-link to="/about">About Me</router-link>   |
                 <router-link to="/experiences"> Experiences</router-link>   |
-                <router-link to="/projects">Projects</router-link>   |
-                <router-link to="/aspirations">Aspirations</router-link>
+                <router-link to="/projects">Projects</router-link>   
+                <!-- <router-link to="/aspirations">Fun Facts!</router-link> -->
             </div>
         </div>
         
@@ -80,13 +80,13 @@ h1 {
 }
 
 h2 {
-  color: rgb(105, 105, 105);
+  color: rgb(54, 53, 53);
   font-family:'Exo', sans-serif;
   font-size: x-large;
 }
 
 h3 {
-  color: rgb(105, 105, 105);
+  color: rgb(54, 53, 53);
   font-family:'Exo', sans-serif;
   font-size: large;
   font-weight: bold;
@@ -130,7 +130,7 @@ img.bg {
   background-color: rgba(255, 255, 255, 0.5);
   margin-bottom: 1.5%;
   width:100%;
-  
+  border-radius: 15px;
 }
 
 .exp {
@@ -140,7 +140,7 @@ img.bg {
 }
 
 .txt {
-  color: rgb(105, 105, 105);
+  color: rgb(54, 53, 53);
   font-family:'Exo', sans-serif;
   font-size: large;
 }
