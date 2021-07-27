@@ -39,13 +39,32 @@
                   <li> Build and release an app from the ground up. </li>
                   <li> Attend my first tech conference focused on NLP </li>
                 </ul>
-                <div class = "flip" href = "content"><div class = "arrow-close" v-on:click = "changeVisible"></div></div>
-              </div>
-              
-              <div id = "content2" ref = "content2">
-                <div class = "flips"><div class = "arrow-open" v-on:click = "changeVisible2"></div></div>
+
+                <span> ~ * ~ </span>
+                
                 A day with no work and no lethargy? Catch me doing ATLEAST ONE of the following:
                 <ul class = "check">
+                  <li> Playing tennis. A HUGE Rafa Nadal Fan! </li> 
+                  <li> Gaming. I play COD Warzone, Rocket League and Formula 1 on my PC that I built during the pandemic.</li> 
+                  <li> Taking photographs. Fun Fact: The background pictures in this website are pictures I have taken! </li>
+                  <li> Travel... from my bedroom to the living room. #ThanksCOVID </li>
+                </ul>
+                <br>
+                My Personal Bucket List:
+                <ul class = "bucket">
+                  <li> Watching all four tennis Grand Slam Finals. </li>
+                  <li> Watch a Formula One Grand Prix. </li>
+                  <li> Fly first class in Emirates. </li>
+                  <li> Witness the Aurora Borealis. </li>
+                  <li> Go camping in a national park where the Milky Way is visible! </li>
+                </ul>
+                <!-- <div class = "flip" href = "content"><div class = "arrow-close" v-on:click = "changeVisible"></div></div> -->
+              </div>
+              
+              <!-- <div id = "content2" ref = "content2">
+                 <div class = "flips"><div class = "arrow-open" v-on:click = "changeVisible2"></div></div> -->
+                <!-- A day with no work and no lethargy? Catch me doing ATLEAST ONE of the following: -->
+                <!-- <ul class = "check">
                   <li> Playing tennis. A HUGE Rafa Nadal Fan! </li> 
                   <li> Gaming. I play COD Warzone, Rocket League and Formula 1 on my PC I built during the pandemic.</li> 
                   <li> Taking photographs. Fun Fact: The background pictures in this website are pictures I have taken! </li>
@@ -59,8 +78,8 @@
                   <li> Fly first class in Emirates. </li>
                   <li> Witness the Aurora Borealis. </li>
                   <li> Go camping in a national park where the Milky Way is visible! </li>
-                </ul>
-              </div>
+                </ul> -->
+              <!-- </div>  -->
             </div>
           </div>
           <!-- <div id="fact"> Fun Fact: The background pictures are not from Google Photos, but are taken by me on the iPhone!</div> -->
@@ -84,7 +103,7 @@
       changeVisible2: function() {
         this.$refs.content.style.display = "block";
         this.$refs.content2.style.display = "none";
-      }
+      },
     }
   }
   // function changeVisible() {
@@ -108,7 +127,11 @@
 
   font-family: 'Exo', sans-serif;
 }
-
+span {
+  display:table;
+  margin:0 auto;
+  font-size: x-large;
+}
 .back {
     background-image: url('../assets/bc.png');
     background-size: cover;
@@ -138,42 +161,41 @@ img.bg {
 }
 
 #myimg {
-  height: 30%;
   width: 30%;
   margin-right: 20px;
   border-radius: 15px;
+  height: 30%;
 }
 
 #content-back {
-  height:30%;
   background-color: rgba(153, 152, 152, 0.25);
-  width: 70%;
   border-radius: 15px;
+  height: 30%;
 }
 
 #content {
-  padding: 4%; 
+  padding-left: 4%;
+  margin:4%;
+  margin-left:0%;
+  margin-bottom:4%;
   text-align: left;
   font-weight: bold;
   font-family: 'Exo', sans-serif;
   color: white;
-  padding-bottom: 1.5%;
+  overflow-y:scroll;
+  height: 56vh;
 }
 
-#content2 {
-  display: none;
-  padding: 4%;
-  text-align: left;
-  font-weight: bold;
-  font-family: 'Exo', sans-serif;
-  color: white;
-  padding-top: 1.5%; 
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 .about {
-  padding-top: 7%;
-  padding-left: 2%;
-  padding-right: 3%;
+  padding-top: 150px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 6%;
 }
 
 .text{
@@ -260,7 +282,11 @@ li {
 .arrow-close:hover {
   transform: scale(1.15);
 }
- 
+
+.check, .bucket {
+  margin-left: 0.25%;
+}
+
 ul.check > li:nth-child(1) {
   padding-top: 2%;
   padding-bottom: 0.75%;

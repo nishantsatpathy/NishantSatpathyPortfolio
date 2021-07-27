@@ -22,10 +22,11 @@
   font-size:large;
   font-family: 'Exo', sans-serif;
   padding-bottom:20px;
-  top:0px;
-  position: relative;
+  width:100%;
+  position: fixed;
   background-color: rgba(153, 152, 152, 0.1);
-  
+  z-index:9999;
+  backdrop-filter: blur(10px);
 }
 
 #nav a {

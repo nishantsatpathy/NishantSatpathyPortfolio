@@ -44,7 +44,7 @@ h1, h2 {
 
 
 .back {
-    background-image: url('../assets/mudon2.png');
+    background-image: url('../assets/rak.png');
     background-size: cover;
     height: 100vh;
     

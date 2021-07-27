@@ -19,11 +19,9 @@
               <li> MMM is a website which allows you to keep track of your favorite restaurants that you have visited and your favorite dishes at the restaurant.</li>
               <li> You can click pictures of the dishes from your device or upload a picture from your photo library. </li>
               <li> Made use of Google Maps API, Places API and Geolocation API to search restaurant locations and find nearby restaurant recommendations. </li>
-              <li> Website was written in VueJS and deployed using Firebase. Database was deployed in Firestore and Google Auth was used for security. </li>
+              <li> Written in VueJS and deployed using Firebase. Database deployed in Firestore and Google Auth used for security. </li>
             </ul>
-            <br>
-            
-            <br>    
+             
           </div>
           <div class="img">
             <img class = "proj-img" src = "../assets/rankin.png"/>
@@ -95,7 +93,7 @@
               <li> Modified baseline simulator to change capacities of busses dependent on the time of the day </li>
               <li> Bus markers dynamically changed color and opacity depending on number of passengers and which route it is on. </li>
               <li> Project written in C++ and front-end written in ReactJS. </li>
-              <li> Link unavailable due to University regulations. </li>
+              <li style = "font-weight: bold"> Link unavailable due to University regulations. </li>
             </ul>  
           </div>
           <div class="img">
@@ -115,6 +113,9 @@ h1 {
   font-family:'Exo', sans-serif;
   font-size: 25px;
   font-weight:normal;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-bottom: 1.5%;
 }
 
 h2 {
@@ -165,16 +166,18 @@ img.bg {
   text-align: left;
   display: inline-flex;
   justify-content: space-between;
-  padding:2%;
   background-color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 1.5%;
-  width:100%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  width:94%;
   border-radius: 15px;
 }
 
 .proj {
   margin: auto;
   padding-bottom: 0.5%;
+  padding-top: 85px;
   
 }
 
@@ -184,21 +187,22 @@ img.bg {
   font-size: large;
   max-width: 60%;
   word-wrap: break-word;
+  margin:3%;
 }
 
-ul {
-  padding-left: 2.5%;
-}
 
 li {
   list-style-type: disc;
+  margin-bottom:3%;
+  margin-left: 3%;
 }
 
 .img {
   position: relative;
   align-items: right;
-  height: 35%;
-  width: 35%;
+  height:100%;
+  
+  margin:3%;
 }
 
 .proj-img {

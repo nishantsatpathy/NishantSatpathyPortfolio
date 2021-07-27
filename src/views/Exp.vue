@@ -77,6 +77,7 @@ h1 {
   font-family:'Exo', sans-serif;
   font-size: 25px;
   font-weight:normal;
+  padding-bottom: 1.5%;
 }
 
 h2 {
@@ -128,15 +129,17 @@ img.bg {
   text-align: left;
   padding:2%;
   background-color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 1.5%;
-  width:100%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  width:94%;
   border-radius: 15px;
 }
 
 .exp {
   margin: auto;
   padding-bottom: 0.5%;
-  
+  padding-top: 85px;
 }
 
 .txt {
@@ -145,11 +148,9 @@ img.bg {
   font-size: large;
 }
 
-ul {
-  padding-left: 1.5%;
-}
-
 li {
   list-style-type: disc;
+  margin-left: 1.5%;
+  
 }
 </style>
