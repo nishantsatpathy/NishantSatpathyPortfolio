@@ -15,8 +15,10 @@
             <img id="myimg" src="../assets/nishant.jpg">
             <div id = "content-back">
               <div id = "content" ref = "content">
-                Hello! I am a student pursuing my Master's of Computer Science in Rice University. I graduated from the University of Minnesota
-                with a Bachelor's of Science in Computer Science. 
+                Indian roots 🇮🇳 Born in Muscat, Oman 🇴🇲 Raised in Dubai, UAE 🇦🇪 Earned my Bachelor's degree in the University of Minnesota 〽️
+                Pursuing my Master's degree in Rice University 🦉 Like a nomad, I am still trying to find my place in the world and I am loving my journey!         
+                <br><br>
+                <span class = "scroll">Scroll through</span> to find out more about me!
                 <br><br>
                 Tech Stack: 
                 <ul>
@@ -40,14 +42,14 @@
                   <li> Attend my first tech conference focused on NLP </li>
                 </ul>
 
-                <span> ~ * ~ </span>
+                <span class = "division"> ~ * ~ </span>
                 
                 A day with no work and no lethargy? Catch me doing ATLEAST ONE of the following:
                 <ul class = "check">
                   <li> Playing tennis. A HUGE Rafa Nadal Fan! </li> 
                   <li> Gaming. I play COD Warzone, Rocket League and Formula 1 on my PC that I built during the pandemic.</li> 
                   <li> Taking photographs. Fun Fact: The background pictures in this website are pictures I have taken! </li>
-                  <li> Travel... from my bedroom to the living room. #ThanksCOVID </li>
+                  <li> Lego. I love building Lego models since childhood!</li>
                 </ul>
                 <br>
                 My Personal Bucket List:
@@ -81,6 +83,19 @@
                 </ul> -->
               <!-- </div>  -->
             </div>
+          </div>
+          <div class = "icon-set">
+          <a href = "https://github.com/nishantsatpathy" target = "_blank">
+            <div class = "icon-back">
+            <img class="icon" src = "../assets/github.png">
+            </div>
+          </a>
+          
+          <a href = "https://www.linkedin.com/in/nishant-satpathy/" target = "_blank">
+            <div class = "icon-back">
+            <img class="icon" src = "../assets/linkedin.png">
+            </div>
+          </a>
           </div>
           <!-- <div id="fact"> Fun Fact: The background pictures are not from Google Photos, but are taken by me on the iPhone!</div> -->
         </div>
@@ -120,6 +135,29 @@
 
 <style scoped>
 
+.icon-set {
+  padding-top: 1.5%;
+}
+
+.icon-back {
+  position:relative;
+  float:right;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-left:1.5%;
+  
+  margin-bottom: 1.5%;
+  padding-right: 0.65%;
+  padding-left: 0.65%;
+  padding-top: 0.65%;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.icon-back:hover {
+    transform: scale(1.1);
+}
+
 #fact{
   padding-top: 5%;
   font-size: x-large;
@@ -127,7 +165,13 @@
 
   font-family: 'Exo', sans-serif;
 }
-span {
+
+.scroll {
+  padding-bottom: 1%;
+  text-decoration: underline;
+}
+
+.division {
   display:table;
   margin:0 auto;
   font-size: x-large;
@@ -186,16 +230,16 @@ img.bg {
   height: 56vh;
 }
 
-::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
+/* ::-webkit-scrollbar {
+    width: 0; 
+    background: transparent;   
+} */
 
 .about {
   padding-top: 150px;
   margin-left: 3%;
   margin-right: 3%;
-  margin-bottom: 6%;
+  padding-bottom: 5%;
 }
 
 .text{
@@ -307,7 +351,7 @@ ul.check > li:nth-child(3) {
 }
 
 ul.check > li:nth-child(4) {
-  list-style: "✈️";
+  list-style: "\1F9F1";
   padding-left: 1%;
 }
 

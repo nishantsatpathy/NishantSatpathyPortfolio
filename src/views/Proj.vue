@@ -90,15 +90,18 @@
             <h2 class = "title"> Campus Connector Simulator </h2>
             <ul>
               <li> Software project simulating the movement of UMN Campus Connector buses along registered routes </li>
-              <li> Modified baseline simulator to change capacities of busses dependent on the time of the day </li>
-              <li> Bus markers dynamically changed color and opacity depending on number of passengers and which route it is on. </li>
+              <li> Modified baseline simulator to change capacities of buses dependent on the time of the day </li>
+              <li> Bus markers dynamically change color and opacity depending on number of passengers and which route it is on. </li>
+              <li> Information about stops in terms of coordinates and number of people waiting can be obtained from the drop down menu </li>
               <li> Project written in C++ and front-end written in ReactJS. </li>
-              <li style = "font-weight: bold"> Link unavailable due to University regulations. </li>
+              
             </ul>  
           </div>
           <div class="img">
             <img class = "proj-img" src = "../assets/simulation.png"/>
-            
+            <a href = "https://youtu.be/fphiwrQvd7E" target = "_blank"><div class = "proj-overlay proj-overlay-blur">
+              <div class = "proj-link"> View Demo &#127909; </div>
+            </div> </a>
           </div>
         </div>
       </div>
